@@ -1,0 +1,269 @@
+@import "./utils/variables"; 
+
+//Acceuil//
+body
+{
+    font-family: 'roboto';
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+        width: 40%;
+    }
+}
+
+.localisation
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#e3e3e3;
+    height: 65px;
+    font-size: 18px;
+    box-shadow: 0px -2px 2px darkgrey;
+    p {
+        margin-left: 15px;
+        font-weight: bold;
+    }
+}
+.explorer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightgrey;
+    height: 220px;
+    h1{
+        font-size: 25px;
+    }
+}
+button{
+
+    padding: 20px 35px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 7px grey;
+}
+h2{
+    width: 105%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.fonctionnement{
+    
+    .card{
+    background-color: $lightgrey;
+    position: relative;
+    .circle{
+        background-color: $colour-primary;
+        border-radius: 100%;
+        position: absolute;
+        left: -12px;
+        p{
+            padding: 8px;
+            margin: -2px 2px;
+            font-size: 15px;
+            color: white;
+        }
+    }
+    i{
+        margin-left: 35px;
+        font-size: 18px;
+        color: grey;
+    }
+    p{
+        margin-left: 35px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    }
+    .card:hover{
+        background-color: lighten($colour-primary, $amount: 35%);
+        i{
+            color: $colour-primary;
+        }
+
+    }
+}
+.card{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 20px;
+        height: 75px;
+        box-shadow: 0px 2px 7px lightgrey;
+        margin-bottom: 25px;
+}
+
+
+.restaurant{
+    background-color: $lightgrey;
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        height: 280px;
+        margin-bottom: 30px;
+    }
+    .card{
+        background-color: white;
+        flex-direction: column;
+        position: relative;
+        height: 285px; 
+        img{
+            width: 100%;
+            height: 70%;
+            border-radius: 21px 21px 0 0;
+        }
+        .nouveau{
+            background-color: $colour-tertiary;
+            width: 83px;
+            font-size: 14px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            p{
+                margin: 0;
+                padding: 6px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                color: green;
+            }
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            color: black;
+        }
+            .nom{
+                height: 79px;
+                h4{
+                    margin: 15px 0 2px;
+                    font-size: 20px;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+    }
+}
+.fa-regular, .far {
+    font-weight: 400;
+    font-size: 25px;
+}
+img{
+    object-fit: cover;
+}
+footer{
+    height: 225px;
+    font-size: 20px;
+    background-color: #292929;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    h4{
+        margin: 0;
+        padding: 20px 0 0 40px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        
+    }
+
+}
+
+//Restaurant//
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        border: 0;
+        background-color: white;
+        background: none;
+        color: black;
+        padding: 0;
+        box-shadow: 0 0;
+    }
+}
+.image_menu{
+    height: 400px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.menu{
+    position: relative;
+    bottom: 60px;
+    padding: 28px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $lightgrey;
+    display: flex;
+    flex-direction: column;
+    h5{
+        border-bottom: solid 3px;
+        width: 37px;
+        font-size: 15px;
+        font-weight: 400;
+        border-color: $colour-tertiary
+    }
+    .card{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+        .choix{
+            padding-left: 40px;
+            padding-top: 10px;
+            width: 100%;
+            h4{
+                margin: 5px 0px 10px 0px;
+            }
+            p{
+                margin: 0;
+            }
+            .precision{
+                display: flex;
+                width: 90%;
+                justify-content: space-between;
+            }
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 60%;
+        }
+    }
+.title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
