@@ -48,10 +48,6 @@ button {
   box-shadow: 0px 2px 7px grey;
 }
 
-h2 {
-  width: 105%;
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -158,6 +154,10 @@ section {
   margin: 0;
 }
 
+.card_comming {
+  display: none;
+}
+
 .fa-regular, .far {
   font-weight: 400;
   font-size: 25px;
@@ -261,6 +261,41 @@ footer ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    width: 30%;
+  }
+  .restaurant a {
+    width: 30%;
+  }
+  .card_comming {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px lightgrey;
+    margin-bottom: 25px;
+    justify-content: center;
+    background-color: #99E2D0;
+  }
+  .flex_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex_menu .cards_menu {
+    width: 30%;
+  }
+  .button button {
+    width: 20%;
+    height: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
