@@ -154,10 +154,6 @@ section {
   margin: 0;
 }
 
-.card_comming {
-  display: none;
-}
-
 .fa-regular, .far {
   font-weight: 400;
   font-size: 25px;
@@ -264,9 +260,15 @@ footer ul li a {
 }
 
 @media (min-width: 992px) {
+  .head .logo {
+    width: 40%;
+  }
+  .logo img {
+    width: auto;
+  }
   .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .cards .card {
@@ -274,16 +276,6 @@ footer ul li a {
   }
   .restaurant a {
     width: 30%;
-  }
-  .card_comming {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0px 2px 7px lightgrey;
-    margin-bottom: 25px;
-    justify-content: center;
-    background-color: #99E2D0;
   }
   .flex_menu {
     display: flex;
