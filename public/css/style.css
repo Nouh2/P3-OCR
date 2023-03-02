@@ -1,3 +1,18 @@
+/* Police Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+/* Police Shrikhand */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+button {
+  padding: 20px 35px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  background: linear-gradient(-20deg, #9356DC, #FF79DA);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 2px 7px grey;
+}
+
 body {
   font-family: "roboto";
 }
@@ -31,10 +46,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: hsl(0deg, 14%, 97%);
-  height: 220px;
+  padding: 0 20px 85px;
+  text-align: center;
 }
 .explorer h1 {
-  font-size: 25px;
+  font-size: 26px;
+  padding: 0 67px;
+}
+.explorer p {
+  font-size: 18px;
+  padding: 0 20px;
 }
 
 button {
@@ -51,7 +72,7 @@ button {
 section {
   display: flex;
   flex-direction: column;
-  padding: 0 28px;
+  padding: 50px 28px 0;
 }
 
 .fonctionnement .card {
