@@ -1,18 +1,18 @@
-@mixin flexColumnCenter {
+@mixin flex-Column-Center {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @mixin flexJustifyAlign {
+  @mixin flex-Justify-Align {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @mixin flexAndJustify {
+  @mixin flex-And-Justify {
     display: flex;
     justify-content: center;
   }
-  @mixin flexAndAlign {
+  @mixin flex-And-Align {
     display: flex;
     align-items: center;
   }
