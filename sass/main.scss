@@ -3,6 +3,7 @@
 @import "./components/btn";
 @import "./layout/footer";
 @import "./utils/mixins";
+@import "./base/base";
 
 //mobile//
 //Acceuil//
@@ -12,8 +13,7 @@ body
 }
 .logo
 {
-    display: flex;
-    justify-content: center;
+    @include flex-And-Justify;
     margin-top: 20px;
     margin-bottom: 20px;
     img {
@@ -23,9 +23,7 @@ body
 
 .localisation
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-Justify-Align;
     background-color:#e3e3e3;
     height: 65px;
     font-size: 18px;
@@ -37,9 +35,7 @@ body
 }
 .explorer
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-Column-Center;
     background-color: $lightgrey;
     padding: 0 20px 85px;
     text-align: center;
@@ -52,20 +48,9 @@ body
         padding: 0 20px;
     }
 }
-button{
 
-    padding: 20px 35px;
-    border-radius: 30px;
-    border: none;
-    font-size: 18px;
-    background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
-    color: white;
-    font-weight: bold;
-    box-shadow: 0px 2px 7px grey;
-}
 section{
-    display: flex;
-    flex-direction: column;
+    @include flex-Column;
     padding: 50px 28px 0;
 }
 
@@ -107,8 +92,7 @@ section{
     }
 }
 .card{
-        display: flex;
-        align-items: center;
+        @include flex-And-Align;
         flex: 1;
         border-radius: 20px;
         height: 75px;
@@ -121,8 +105,7 @@ section{
     background-color: $lightgrey;
     a{
         width: 100%;
-        display: flex;
-        justify-content: center;
+        @include flex-And-Justify;
         text-decoration: none;
         height: 280px;
         margin-bottom: 30px;
@@ -148,14 +131,12 @@ section{
                 margin: 0;
                 padding: 6px;
                 font-weight: bold;
-                display: flex;
-                justify-content: center;
+               @include flex-And-Justify;
                 color: green;
             }
         }
         .info{
-            display: flex;
-            align-items: center;
+            @include flex-And-Align;
             justify-content: space-between;
             width: 90%;
             color: black;
@@ -184,8 +165,7 @@ footer{
     font-size: 20px;
     background-color: #292929;
     color: white;
-    display: flex;
-    flex-direction: column;
+    @include flex-Column;
     h4{
         margin: 0;
         padding: 20px 0 0 40px;
@@ -207,9 +187,7 @@ footer{
 //Restaurant//
 
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-Justify-Align;
     button{
         border: 0;
         background-color: white;
@@ -233,8 +211,7 @@ footer{
     padding: 28px;
     border-radius: 40px 40px 0px 0px;
     background-color: $lightgrey;
-    display: flex;
-    flex-direction: column;
+    @include flex-Column;
     h5{
         border-bottom: solid 3px;
         width: 37px;
@@ -244,8 +221,7 @@ footer{
     }
     .card{
         background-color: white;
-        display: flex;
-        flex-direction: column;
+        @include flex-Column;
         padding: 10px 18px 0;
     }
         .choix{
@@ -261,17 +237,15 @@ footer{
                 justify-content: space-between;
             }
         }
-    }
+}
     .button{
-        display: flex;
-        justify-content: center;
+       @include flex-And-Justify;
         button{
             width: 60%;
         }
     }
 .title{
-        display: flex;
-        align-items: center;
+       @include flex-And-Align;
         justify-content: space-between;
 }
 

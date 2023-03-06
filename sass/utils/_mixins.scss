@@ -5,7 +5,7 @@
   }
   @mixin flex-Justify-Align {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   @mixin flex-And-Justify {
@@ -15,4 +15,8 @@
   @mixin flex-And-Align {
     display: flex;
     align-items: center;
+  }
+  @mixin flex-Column {
+    display: flex;
+    flex-direction: column;
   }

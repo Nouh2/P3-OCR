@@ -1,0 +1,25 @@
+/*footer identique sur toutes les pages*/
+footer{
+    height: 225px;
+    font-size: 20px;
+    background-color: #292929;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    h4{
+        margin: 0;
+        padding: 20px 0 0 40px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        
+    }
+
+}

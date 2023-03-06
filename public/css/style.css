@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 /* Police Shrikhand */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "roboto";
+}
+
+/* forme generale du button*/
 button {
   padding: 20px 35px;
   border-radius: 30px;
@@ -11,6 +16,57 @@ button {
   color: white;
   font-weight: bold;
   box-shadow: 0px 2px 7px grey;
+}
+
+/* button menu restaurant*/
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 60%;
+}
+
+/*button menu restaurant pour desktop*/
+@media (min-width: 992px) {
+  .button button {
+    width: 20%;
+    height: 70px;
+  }
+}
+/*footer identique sur toutes les pages*/
+footer {
+  height: 225px;
+  font-size: 20px;
+  background-color: #292929;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer h4 {
+  margin: 0;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -29,8 +85,8 @@ body {
 
 .localisation {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #e3e3e3;
   height: 65px;
   font-size: 18px;
@@ -56,17 +112,6 @@ body {
 .explorer p {
   font-size: 18px;
   padding: 0 20px;
-}
-
-button {
-  padding: 20px 35px;
-  border-radius: 30px;
-  border: none;
-  font-size: 18px;
-  background: linear-gradient(-20deg, #9356DC, #FF79DA);
-  color: white;
-  font-weight: bold;
-  box-shadow: 0px 2px 7px grey;
 }
 
 section {
@@ -209,8 +254,8 @@ footer ul li a {
 
 .head {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .head button {
   border: 0;
