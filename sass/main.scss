@@ -7,10 +7,6 @@
 
 //mobile//
 //Acceuil//
-body
-{
-    font-family: 'roboto';
-}
 .logo
 {
     @include flex-And-Justify;
@@ -60,6 +56,13 @@ section{
     background-color: $lightgrey;
     position: relative;
     flex: none;
+    &:hover{
+        background-color: lighten($colour-primary, $amount: 35%);
+        i{
+            color: $colour-primary;
+        }
+
+    }
     .circle{
         background-color: $colour-primary;
         border-radius: 100%;
@@ -83,13 +86,6 @@ section{
         font-weight: bold;
     }
     }
-    .card:hover{
-        background-color: lighten($colour-primary, $amount: 35%);
-        i{
-            color: $colour-primary;
-        }
-
-    }
 }
 .card{
         @include flex-And-Align;
@@ -106,7 +102,6 @@ section{
     a{
         width: 100%;
         @include flex-And-Justify;
-        text-decoration: none;
         height: 280px;
         margin-bottom: 30px;
     }
@@ -116,7 +111,6 @@ section{
         position: relative;
         height: 285px; 
         img{
-            width: 100%;
             height: 70%;
             border-radius: 21px 21px 0 0;
         }
@@ -157,32 +151,6 @@ section{
     font-weight: 400;
     font-size: 25px;
 }
-img{
-    object-fit: cover;
-}
-footer{
-    height: 225px;
-    font-size: 20px;
-    background-color: #292929;
-    color: white;
-    @include flex-Column;
-    h4{
-        margin: 0;
-        padding: 20px 0 0 40px;
-    }
-    ul{
-        list-style: none;
-        li{
-            margin-bottom: 5px;
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        }
-        
-    }
-
-}
 
 //Restaurant//
 
@@ -199,10 +167,6 @@ footer{
 }
 .image_menu{
     height: 400px;
-    img{
-        width: 100%;
-        height: 100%;
-    }
 }
 .menu{
     position: relative;
@@ -213,11 +177,15 @@ footer{
     background-color: $lightgrey;
     @include flex-Column;
     h5{
-        border-bottom: solid 3px;
-        width: 37px;
         font-size: 15px;
         font-weight: 400;
-        border-color: $colour-tertiary
+        &::after{
+            border-bottom: solid 3px;
+            width: 37px;
+            border-color: $colour-tertiary;
+            display: block;
+            content: "";
+        }
     }
     .card{
         background-color: white;
@@ -238,12 +206,6 @@ footer{
             }
         }
 }
-    .button{
-       @include flex-And-Justify;
-        button{
-            width: 60%;
-        }
-    }
 .title{
        @include flex-And-Align;
         justify-content: space-between;
@@ -285,11 +247,5 @@ footer{
     .cards_menu{
         width: 30%;
     }
-}
-.button{
-button{
-    width: 20%;
-    height: 70px;
-}
 }
 }

@@ -69,10 +69,6 @@ a {
   color: black;
 }
 
-body {
-  font-family: "roboto";
-}
-
 .logo {
   display: flex;
   justify-content: center;
@@ -125,6 +121,12 @@ section {
   position: relative;
   flex: none;
 }
+.fonctionnement .card:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement .card:hover i {
+  color: #9356DC;
+}
 .fonctionnement .card .circle {
   background-color: #9356DC;
   border-radius: 100%;
@@ -147,12 +149,6 @@ section {
   font-size: 18px;
   font-weight: bold;
 }
-.fonctionnement .card:hover {
-  background-color: #f2eafb;
-}
-.fonctionnement .card:hover i {
-  color: #9356DC;
-}
 
 .card {
   display: flex;
@@ -171,7 +167,6 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  text-decoration: none;
   height: 280px;
   margin-bottom: 30px;
 }
@@ -182,7 +177,6 @@ section {
   height: 285px;
 }
 .restaurant .card img {
-  width: 100%;
   height: 70%;
   border-radius: 21px 21px 0 0;
 }
@@ -225,33 +219,6 @@ section {
   font-size: 25px;
 }
 
-img {
-  object-fit: cover;
-}
-
-footer {
-  height: 225px;
-  font-size: 20px;
-  background-color: #292929;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-footer h4 {
-  margin: 0;
-  padding: 20px 0 0 40px;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  margin-bottom: 5px;
-}
-footer ul li a {
-  text-decoration: none;
-  color: white;
-}
-
 .head {
   display: flex;
   justify-content: center;
@@ -269,10 +236,6 @@ footer ul li a {
 .image_menu {
   height: 400px;
 }
-.image_menu img {
-  width: 100%;
-  height: 100%;
-}
 
 .menu {
   position: relative;
@@ -285,11 +248,15 @@ footer ul li a {
   flex-direction: column;
 }
 .menu h5 {
-  border-bottom: solid 3px;
-  width: 37px;
   font-size: 15px;
   font-weight: 400;
+}
+.menu h5::after {
+  border-bottom: solid 3px;
+  width: 37px;
   border-color: #99E2D0;
+  display: block;
+  content: "";
 }
 .menu .card {
   background-color: white;
@@ -309,14 +276,6 @@ footer ul li a {
 .menu .choix .precision {
   display: flex;
   justify-content: space-between;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-}
-.button button {
-  width: 60%;
 }
 
 .title {
@@ -349,10 +308,6 @@ footer ul li a {
   }
   .flex_menu .cards_menu {
     width: 30%;
-  }
-  .button button {
-    width: 20%;
-    height: 70px;
   }
 }
 
