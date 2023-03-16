@@ -69,6 +69,16 @@ a {
   color: black;
 }
 
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translatY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1);
+  }
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -282,6 +292,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu {
+  animation: menu 2s;
+  transform-origin: top;
 }
 
 @media (min-width: 992px) {
