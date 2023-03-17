@@ -4,8 +4,7 @@ footer{
     font-size: 20px;
     background-color: #292929;
     color: white;
-    display: flex;
-    flex-direction: column;
+    @include flex-Column;
     h4{
         margin: 0;
         padding: 20px 0 0 40px;

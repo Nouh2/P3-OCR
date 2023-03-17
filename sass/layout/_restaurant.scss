@@ -1,0 +1,76 @@
+//Restaurant//
+
+.head {
+    @include flex-Justify-Align;
+    button{
+        border: 0;
+        background-color: white;
+        background: none;
+        color: black;
+        padding: 0;
+        box-shadow: 0 0;
+    }
+}
+.image_menu{
+    height: 400px;
+}
+.menu{
+    position: relative;
+    margin-top: -60px;
+    z-index: 1;
+    padding: 28px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $lightgrey;
+    @include flex-Column;
+    h5{
+        font-size: 15px;
+        font-weight: 400;
+        &::after{
+            border-bottom: solid 3px;
+            width: 37px;
+            border-color: $colour-tertiary;
+            display: block;
+            content: "";
+        }
+    }
+    .card{
+        background-color: white;
+        @include flex-Column;
+        padding: 10px 18px 0;
+    }
+        .choix{
+            width: 100%;
+            h4{
+                margin: 5px 0px 10px 0px;
+            }
+            p{
+                margin: 0;
+            }
+            .precision{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+}
+.title{
+       @include flex-And-Align;
+        justify-content: space-between;
+}
+
+@for $i from 1 through 3{
+    .cards_menu:nth-of-type(#{$i}){
+       animation: menu 1.5s 0.5s*$i both;
+    }
+    }
+
+//Desktop//
+
+@media (min-width: 992px){
+    .flex_menu{
+        display: flex;
+        justify-content: space-between;
+        .cards_menu{
+            width: 30%;
+        }
+    }
+    }

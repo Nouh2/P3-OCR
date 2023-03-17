@@ -6,6 +6,27 @@ body {
   font-family: "roboto";
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* forme generale du button*/
 button {
   padding: 20px 35px;
@@ -32,51 +53,6 @@ button {
   .button button {
     width: 20%;
     height: 70px;
-  }
-}
-/*footer identique sur toutes les pages*/
-footer {
-  height: 225px;
-  font-size: 20px;
-  background-color: #292929;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-footer h4 {
-  margin: 0;
-  padding: 20px 0 0 40px;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  margin-bottom: 5px;
-}
-footer ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-    transform: translatY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(1);
   }
 }
 .logo {
@@ -229,6 +205,25 @@ section {
   font-size: 25px;
 }
 
+@media (min-width: 992px) {
+  .head .logo {
+    width: 40%;
+  }
+  .logo img {
+    width: auto;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    width: 30%;
+  }
+  .restaurant a {
+    width: 30%;
+  }
+}
 .head {
   display: flex;
   justify-content: center;
@@ -294,29 +289,19 @@ section {
   justify-content: space-between;
 }
 
-.menu {
-  animation: menu 2s;
-  transform-origin: top;
+.cards_menu:nth-of-type(1) {
+  animation: menu 1.5s 0.5s both;
+}
+
+.cards_menu:nth-of-type(2) {
+  animation: menu 1.5s 1s both;
+}
+
+.cards_menu:nth-of-type(3) {
+  animation: menu 1.5s 1.5s both;
 }
 
 @media (min-width: 992px) {
-  .head .logo {
-    width: 40%;
-  }
-  .logo img {
-    width: auto;
-  }
-  .cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .cards .card {
-    width: 30%;
-  }
-  .restaurant a {
-    width: 30%;
-  }
   .flex_menu {
     display: flex;
     justify-content: space-between;
@@ -324,6 +309,29 @@ section {
   .flex_menu .cards_menu {
     width: 30%;
   }
+}
+/*footer identique sur toutes les pages*/
+footer {
+  height: 225px;
+  font-size: 20px;
+  background-color: #292929;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer h4 {
+  margin: 0;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
