@@ -35,11 +35,11 @@
     }
     .card{
         background-color: white;
-        @include flex-Column;
-        padding: 10px 18px 0;
+        display: flex;
     }
         .choix{
             width: 100%;
+            padding: 10px 18px 10px;
             h4{
                 margin: 5px 0px 10px 0px;
             }
@@ -59,9 +59,27 @@
 
 @for $i from 1 through 3{
     .cards_menu:nth-of-type(#{$i}){
-       animation: menu 1.5s 0.5s*$i both;
+       animation: menu 500ms 500ms*$i both;
     }
     }
+
+.checked{
+    display: none;
+}
+.card:hover{
+    .checked{
+        display: flex;
+        justify-content: center;
+        background-color: #99E2D0;
+        width: 20%;
+        height: 100%;
+        align-items: center;
+        border-radius: 0 20px 20px 0;
+        animation: check 1s forwards;
+        font-size: 17px;
+        color: white;
+    }
+}
 
 //Desktop//
 

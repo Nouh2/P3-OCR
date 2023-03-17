@@ -9,3 +9,15 @@
     }
     
 }
+
+@keyframes check{
+    from {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    to {
+        transform: scaleX(1);
+        transform-origin: right;
+    
+    } 
+}
