@@ -59,13 +59,14 @@
 
 @for $i from 1 through 3{
     .cards_menu:nth-of-type(#{$i}){
-       animation: menu 500ms 500ms*$i both;
+       animation: menu 800ms 600ms*$i both;
     }
     }
 
 .checked{
     display: none;
 }
+
 .card:hover{
     .checked{
         display: flex;
@@ -75,9 +76,15 @@
         height: 100%;
         align-items: center;
         border-radius: 0 20px 20px 0;
-        animation: check 1s forwards;
+        animation: check 500ms ;
         font-size: 17px;
         color: white;
+        i{
+            animation: spin 500ms ;
+        }
+    }
+    span{
+        animation: price 500ms ;
     }
 }
 
