@@ -88,6 +88,12 @@
     }
 }
 
+.fa-heart:hover{
+     animation: heart 2s forwards ;
+     font-weight: bold;
+     background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+}
+
 //Desktop//
 
 @media (min-width: 992px){

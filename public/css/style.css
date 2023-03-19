@@ -53,6 +53,20 @@ a {
     transform: translateX(0);
   }
 }
+@keyframes heart {
+  0% {
+    opacity: 0.3;
+    background: linear-gradient(-20deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(-20deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
 /* forme generale du button*/
 button {
   padding: 20px 35px;
@@ -347,6 +361,12 @@ section {
 }
 .card:hover span {
   animation: price 500ms;
+}
+
+.fa-heart:hover {
+  animation: heart 2s forwards;
+  font-weight: bold;
+  background: linear-gradient(-20deg, #9356DC, #FF79DA);
 }
 
 @media (min-width: 992px) {
