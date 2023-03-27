@@ -56,42 +56,19 @@
        @include flex-And-Align;
         justify-content: space-between;
 }
-
-@for $i from 1 through 3{
-    .cards_menu:nth-of-type(#{$i}){
-       animation: menu 800ms 600ms*$i both;
-    }
-    }
-
-.checked{
-    display: none;
-}
-
-.card:hover{
-    .checked{
-        display: flex;
-        justify-content: center;
-        background-color: #99E2D0;
-        width: 20%;
-        height: 100%;
-        align-items: center;
-        border-radius: 0 20px 20px 0;
-        animation: check 500ms ;
-        font-size: 17px;
-        color: white;
-        i{
-            animation: spin 500ms ;
-        }
+.precision{
+    p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 85%;
     }
     span{
-        animation: price 500ms ;
+        width: 10%;
     }
 }
-
-.fa-heart:hover{
-     animation: heart 2s forwards ;
-     font-weight: bold;
-     background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+.checked{
+    display: none;
 }
 
 //Desktop//

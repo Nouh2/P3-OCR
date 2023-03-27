@@ -50,6 +50,7 @@ section{
     flex: none;
     &:hover{
         background-color: lighten($colour-primary, $amount: 35%);
+        box-shadow: 0px 2px 7px darken($color: lightgrey, $amount: 30%);
         i{
             color: $colour-primary;
         }

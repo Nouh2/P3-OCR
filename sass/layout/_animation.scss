@@ -1,0 +1,40 @@
+//loader//
+
+
+//Menu apparition//
+@for $i from 1 through 3{
+    .cards_menu:nth-of-type(#{$i}){
+       animation: menu 800ms 600ms*$i both;
+    }
+    }
+
+//Coche de validation//
+.card:hover{
+    margin-right: 0;
+    transition: all 0.5s ease-in-out;
+    .checked{
+        @include flex-And-Justify;
+        background-color: #99E2D0;
+        width: 80px;
+        height: 100%;
+        align-items: center;
+        border-radius: 0 20px 20px 0;
+        //animation: check 500ms ;//
+        font-size: 17px;
+        color: white;
+        margin-right: -80px;
+        i{
+            animation: spin 500ms ;
+        }
+    }
+    span{
+        animation: price 500ms ;
+    }
+}
+
+//coeur//
+.fa-heart:hover{
+    animation: heart 0.5s forwards ;
+    font-weight: bold;
+    background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+}
