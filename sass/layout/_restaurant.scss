@@ -36,6 +36,8 @@
     .card{
         background-color: white;
         display: flex;
+        position: relative;
+        overflow: hidden;
     }
         .choix{
             width: 100%;
@@ -68,7 +70,8 @@
     }
 }
 .checked{
-    display: none;
+    display: flex;
+    position: absolute;
 }
 
 //Desktop//

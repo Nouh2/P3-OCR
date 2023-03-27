@@ -54,18 +54,21 @@ a {
     transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-70%);
   }
 }
 @keyframes heart {
   0% {
-    transform: scaleY(0.1);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
     background: linear-gradient(-20deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   100% {
+    opacity: 1;
     transform: scaleY(1);
     background: linear-gradient(-20deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
@@ -85,11 +88,20 @@ a {
   animation: menu 800ms 1800ms both;
 }
 
-.card:hover {
-  margin-right: 0;
-  transition: all 0.5s ease-in-out;
-}
 .card:hover .checked {
+  transition: all 0.5s ease-in-out;
+  left: 82%;
+}
+.card:hover .checked i {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+.card:hover span {
+  transform: translateX(-60px);
+  transition: all 0.7s;
+}
+
+.checked {
   display: flex;
   justify-content: center;
   background-color: #99E2D0;
@@ -99,16 +111,10 @@ a {
   border-radius: 0 20px 20px 0;
   font-size: 17px;
   color: white;
-  margin-right: -80px;
-}
-.card:hover .checked i {
-  animation: spin 500ms;
-}
-.card:hover span {
-  animation: price 500ms;
+  left: 101%;
 }
 
-.fa-heart:hover {
+.h:hover .fa-heart {
   animation: heart 0.5s forwards;
   font-weight: bold;
   background: linear-gradient(-20deg, #9356DC, #FF79DA);
@@ -354,6 +360,8 @@ section {
 .menu .card {
   background-color: white;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 .menu .choix {
   width: 100%;
@@ -387,7 +395,8 @@ section {
 }
 
 .checked {
-  display: none;
+  display: flex;
+  position: absolute;
 }
 
 @media (min-width: 992px) {
