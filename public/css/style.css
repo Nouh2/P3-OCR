@@ -27,36 +27,6 @@ a {
     transform: translateY(0);
   }
 }
-@keyframes check {
-  0% {
-    transform: scaleX(0.2);
-    transform-origin: right;
-  }
-  50% {
-    transform: scaleX(1);
-    transform-origin: right;
-  }
-  100% {
-    transform: scaleX(0.2);
-    transform-origin: right;
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes price {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-70%);
-  }
-}
 @keyframes heart {
   0% {
     opacity: 0;
@@ -114,10 +84,25 @@ a {
   left: 101%;
 }
 
-.h:hover .fa-heart {
-  animation: heart 0.5s forwards;
+.h {
+  position: relative;
+  overflow: hidden;
   font-weight: bold;
+}
+
+.h::before {
+  content: "";
+  position: absolute;
   background: linear-gradient(-20deg, #9356DC, #FF79DA);
+  width: 100%;
+  height: 100%;
+  top: 26px;
+  transition: all 0.5s;
+}
+
+.h:hover::before {
+  top: 0;
+  z-index: -1;
 }
 
 /* forme generale du button*/
