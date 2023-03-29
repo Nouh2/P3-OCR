@@ -127,6 +127,9 @@ section{
             justify-content: space-between;
             width: 90%;
             color: black;
+            .h{
+                z-index: 0;
+            }
         }
             .nom{
                 height: 79px;
