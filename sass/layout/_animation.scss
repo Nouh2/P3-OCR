@@ -33,39 +33,41 @@
 //Coche de validation//
 .card:hover{
     .checked{
-        transition: all 0.5s ease-in-out;
-        margin-right: 0;
+        width: 80px;
         i{
-            transition: all 0.5s ease-in-out;
             transform: rotate(360deg);
         }
-    }
-    span{
-        transform: translateX(0);
-        transition: all 0.7s;
     }
 }
 .checked{
     @include flex-And-Justify;
     background-color: #99E2D0;
-    width: 90px;
+    display: flex;
+    width: 0;
     height: 100%;
+    overflow: hidden;
     align-items: center;
     border-radius: 0 20px 20px 0;
     font-size: 17px;
     color: white;
-    margin-right: -83px;
+    transition: width 0.7s;
+    i{
+        position: relative;
+        transition: all 500ms;
+    }
     
 }
 //coeur//
 
     .h{
+       .fa-heart{ 
         position: relative;
         overflow: hidden;
         font-weight: bold;
     }
+}
 
-.h::before{
+.fa-heart::after{
     content: '';
     position: absolute;
     background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
@@ -76,7 +78,7 @@
     
 }
 .h:hover{
-    &::before{
+    .fa-heart::after{
         top: 0;
         z-index: -1;
 }
