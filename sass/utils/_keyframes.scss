@@ -51,6 +51,32 @@
     }
 }
 
+@keyframes check_spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+  
+@keyframes heart-color{
+    0% {
+      background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 50%, rgba(187, 98, 219, 0) 66%);
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+    }
+    
+    100% {
+      background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+      font-weight: 900;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+  }}
   
 
 
