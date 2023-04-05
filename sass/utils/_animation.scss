@@ -62,11 +62,14 @@
 .h:hover {
     .fa-heart{
     animation: heart 1s forwards;
-    font-weight: 900;
     background-clip: border-box;
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+    transform: scale(1.1);
     }
+}
+.fa-heart{
+    transition: all 1s;
 }

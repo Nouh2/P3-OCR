@@ -30,20 +30,20 @@ a {
 @keyframes heart {
   0% {
     opacity: 0;
-    transform: scaleY(0);
     transform-origin: bottom;
     background: linear-gradient(-20deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: bold;
   }
   100% {
     opacity: 1;
-    transform: scaleY(1);
     background: linear-gradient(-20deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: bold;
   }
 }
 @keyframes loader_dissapear {
@@ -69,23 +69,6 @@ a {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes heart-color {
-  0% {
-    background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 50%, rgba(187, 98, 219, 0) 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-  }
-  100% {
-    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-    font-weight: 900;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
   }
 }
 .loader {
@@ -152,12 +135,16 @@ a {
 
 .h:hover .fa-heart {
   animation: heart 1s forwards;
-  font-weight: 900;
   background-clip: border-box;
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  transition: all 1s;
 }
 
 /* forme generale du button*/
