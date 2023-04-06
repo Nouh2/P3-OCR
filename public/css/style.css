@@ -36,6 +36,7 @@ a {
     background-clip: text;
     color: transparent;
     font-weight: bold;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
@@ -44,6 +45,7 @@ a {
     background-clip: text;
     color: transparent;
     font-weight: bold;
+    transform: scale(1);
   }
 }
 @keyframes loader_dissapear {
@@ -140,11 +142,6 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  transform: scale(1.1);
-}
-
-.fa-heart {
-  transition: all 1s;
 }
 
 /* forme generale du button*/
@@ -395,17 +392,19 @@ section {
 .menu .choix {
   padding: 10px 18px 10px;
   flex: 1;
-  white-space: nowrap;
+  overflow: hidden;
 }
 .menu .choix h4 {
   margin: 5px 0px 10px 0px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .choix p {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .price p {
   margin: 0;

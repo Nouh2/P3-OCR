@@ -42,16 +42,18 @@
         .choix{
             padding: 10px 18px 10px;
             flex: 1;
-            white-space: nowrap;
+            overflow: hidden;
             h4{
                 margin: 5px 0px 10px 0px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                overflow: hidden;
             }
             p{
                 margin: 0;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                overflow: hidden;
             }
         }
         .price{
