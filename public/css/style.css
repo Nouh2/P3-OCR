@@ -31,7 +31,7 @@ a {
   0% {
     opacity: 0;
     transform-origin: bottom;
-    background: linear-gradient(-20deg, #9356DC, #FF79DA);
+    background: linear-gradient(-20deg, #9356dc, #ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -40,7 +40,7 @@ a {
   }
   100% {
     opacity: 1;
-    background: linear-gradient(-20deg, #9356DC, #FF79DA);
+    background: linear-gradient(-20deg, #9356dc, #ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -91,9 +91,9 @@ a {
   width: 100px;
   border-radius: 50%;
   border-left: solid 10px hsl(0deg, 14%, 97%);
-  border-top: solid 10px #99E2D0;
-  border-right: solid 10px #9356DC;
-  border-bottom: solid 10px #FF79DA;
+  border-top: solid 10px #99e2d0;
+  border-right: solid 10px #9356dc;
+  border-bottom: solid 10px #ff79da;
   animation: loader_spin 1s infinite;
 }
 
@@ -119,7 +119,7 @@ a {
 .checked {
   display: flex;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: flex;
   width: 80px;
   height: 100%;
@@ -150,7 +150,7 @@ button {
   border-radius: 30px;
   border: none;
   font-size: 18px;
-  background: linear-gradient(-20deg, #9356DC, #FF79DA);
+  background: linear-gradient(-20deg, #9356dc, #ff79da);
   color: white;
   font-weight: bold;
   box-shadow: 0px 2px 7px grey;
@@ -229,10 +229,10 @@ section {
   box-shadow: 0px 2px 7px #878787;
 }
 .fonctionnement .card:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonctionnement .card .circle {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 100%;
   position: absolute;
   left: -12px;
@@ -285,7 +285,7 @@ section {
   border-radius: 21px 21px 0 0;
 }
 .restaurant .card .nouveau {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 83px;
   font-size: 14px;
   position: absolute;
@@ -321,7 +321,8 @@ section {
   margin: 0;
 }
 
-.fa-regular, .far {
+.fa-regular,
+.far {
   font-weight: 400;
   font-size: 25px;
 }
@@ -380,7 +381,7 @@ section {
 .menu h5::after {
   border-bottom: solid 3px;
   width: 37px;
-  border-color: #99E2D0;
+  border-color: #99e2d0;
   display: block;
   content: "";
 }

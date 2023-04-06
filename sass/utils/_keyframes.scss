@@ -1,69 +1,62 @@
-@keyframes menu{
-    from{
-        opacity: 0;
-        transform: translateY(7%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateY(7%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // coeur animation
 @keyframes heart {
-    0% {
-        opacity: 0;
-        transform-origin: bottom;
-        background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: bold;
-        transform: scale(0);
-      }
-      
-    100%{
-        opacity: 1;
-        background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: bold;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform-origin: bottom;
+    background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    transform: scale(1);
+  }
 }
 //Loader acceuil
-@keyframes loader_dissapear{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        z-index: -1;
-    }
+@keyframes loader_dissapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
-@keyframes loader_spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes loader_spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 // coche de validation
-@keyframes check_spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes check_spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-  
-
-
-
-    

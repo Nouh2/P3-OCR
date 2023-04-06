@@ -1,177 +1,172 @@
 //Acceuil//
-.logo
-{
-    @include flex-And-Justify;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    img {
-        width: 40%;
-    }
+.logo {
+  @include flex-And-Justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  img {
+    width: 40%;
+  }
 }
 
-.localisation
-{
-    @include flex-Justify-Align;
-    background-color:#e3e3e3;
-    height: 65px;
+.localisation {
+  @include flex-Justify-Align;
+  background-color: #e3e3e3;
+  height: 65px;
+  font-size: 18px;
+  box-shadow: 0px -2px 2px darkgrey;
+  p {
+    margin-left: 15px;
+    font-weight: bold;
+  }
+}
+.explorer {
+  @include flex-Column-Center;
+  background-color: $lightgrey;
+  padding: 0 20px 85px;
+  text-align: center;
+  h1 {
+    font-size: 26px;
+    padding: 0 67px;
+  }
+  p {
     font-size: 18px;
-    box-shadow: 0px -2px 2px darkgrey;
-    p {
-        margin-left: 15px;
-        font-weight: bold;
-    }
-}
-.explorer
-{
-    @include flex-Column-Center;
-    background-color: $lightgrey;
-    padding: 0 20px 85px;
-    text-align: center;
-    h1{
-        font-size: 26px;
-        padding: 0 67px;
-    }
-    p{
-        font-size: 18px;
-        padding: 0 20px;
-    }
+    padding: 0 20px;
+  }
 }
 
-section{
-    @include flex-Column;
-    padding: 50px 28px 0;
+section {
+  @include flex-Column;
+  padding: 50px 28px 0;
 }
 
-.fonctionnement{
-    
-    .card{
+.fonctionnement {
+  .card {
     background-color: $lightgrey;
     position: relative;
     flex: none;
-    &:hover{
-        background-color: lighten($colour-primary, $amount: 35%);
-        box-shadow: 0px 2px 7px darken($color: lightgrey, $amount: 30%);
-        i{
-            color: $colour-primary;
-        }
+    &:hover {
+      background-color: lighten($colour-primary, $amount: 35%);
+      box-shadow: 0px 2px 7px darken($color: lightgrey, $amount: 30%);
+      i {
+        color: $colour-primary;
+      }
+    }
+    .circle {
+      background-color: $colour-primary;
+      border-radius: 100%;
+      position: absolute;
+      left: -12px;
+      p {
+        padding: 8px;
+        margin: -2px 2px;
+        font-size: 15px;
+        color: white;
+      }
+    }
+    i {
+      margin-left: 35px;
+      font-size: 18px;
+      color: grey;
+    }
+    p {
+      margin-left: 35px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+.card {
+  @include flex-And-Align;
+  flex: 1;
+  border-radius: 20px;
+  height: 75px;
+  box-shadow: 0px 2px 7px lightgrey;
+  margin-bottom: 25px;
+}
 
+.restaurant {
+  background-color: $lightgrey;
+  a {
+    width: 100%;
+    @include flex-And-Justify;
+    height: 280px;
+    margin-bottom: 30px;
+  }
+  .card {
+    background-color: white;
+    flex-direction: column;
+    position: relative;
+    height: 285px;
+    img {
+      height: 70%;
+      border-radius: 21px 21px 0 0;
     }
-    .circle{
-        background-color: $colour-primary;
-        border-radius: 100%;
-        position: absolute;
-        left: -12px;
-        p{
-            padding: 8px;
-            margin: -2px 2px;
-            font-size: 15px;
-            color: white;
-        }
-    }
-    i{
-        margin-left: 35px;
-        font-size: 18px;
-        color: grey;
-    }
-    p{
-        margin-left: 35px;
-        font-size: 18px;
+    .nouveau {
+      background-color: $colour-tertiary;
+      width: 83px;
+      font-size: 14px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      p {
+        margin: 0;
+        padding: 6px;
         font-weight: bold;
-    }
-    }
-}
-.card{
-        @include flex-And-Align;
-        flex: 1;
-        border-radius: 20px;
-        height: 75px;
-        box-shadow: 0px 2px 7px lightgrey;
-        margin-bottom: 25px;
-}
-
-
-.restaurant{
-    background-color: $lightgrey;
-    a{
-        width: 100%;
         @include flex-And-Justify;
-        height: 280px;
-        margin-bottom: 30px;
+        color: green;
+      }
     }
-    .card{
-        background-color: white;
-        flex-direction: column;
-        position: relative;
-        height: 285px; 
-        img{
-            height: 70%;
-            border-radius: 21px 21px 0 0;
-        }
-        .nouveau{
-            background-color: $colour-tertiary;
-            width: 83px;
-            font-size: 14px;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            p{
-                margin: 0;
-                padding: 6px;
-                font-weight: bold;
-               @include flex-And-Justify;
-                color: green;
-            }
-        }
-        .info{
-            @include flex-And-Align;
-            justify-content: space-between;
-            width: 90%;
-            color: black;
-            .h{
-                z-index: 0;
-            }
-        }
-            .nom{
-                height: 79px;
-                h4{
-                    margin: 15px 0 2px;
-                    font-size: 20px;
-                }
-                p{
-                    margin: 0;
-                }
-            }
+    .info {
+      @include flex-And-Align;
+      justify-content: space-between;
+      width: 90%;
+      color: black;
+      .h {
+        z-index: 0;
+      }
     }
+    .nom {
+      height: 79px;
+      h4 {
+        margin: 15px 0 2px;
+        font-size: 20px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
 }
-.fa-regular, .far {
-    font-weight: 400;
-    font-size: 25px;
+.fa-regular,
+.far {
+  font-weight: 400;
+  font-size: 25px;
 }
 
 //Desktop//
 
-@media (min-width: 992px){
-    .head{
-        .logo{
-            width: 40%;
-        }
-        }
-        .logo{
-            img{
-                width: auto;
-            }
-        }
-        .cards{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                .card{
-                    width: 30%;
-                }
-            }
-            .restaurant{
-                a{
-                    width: 30%;
-                }
-            }
+@media (min-width: 992px) {
+  .head {
+    .logo {
+      width: 40%;
+    }
+  }
+  .logo {
+    img {
+      width: auto;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+      width: 30%;
+    }
+  }
+  .restaurant {
+    a {
+      width: 30%;
+    }
+  }
 }

@@ -1,23 +1,22 @@
 @mixin flex-Column-Center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @mixin flex-Justify-Align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @mixin flex-And-Justify {
-    display: flex;
-    justify-content: center;
-  }
-  @mixin flex-And-Align {
-    display: flex;
-    align-items: center;
-  }
-  @mixin flex-Column {
-    display: flex;
-    flex-direction: column;
-  }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-Justify-Align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-And-Justify {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-And-Align {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-Column {
+  display: flex;
+  flex-direction: column;
+}
