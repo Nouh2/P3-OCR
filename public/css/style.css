@@ -172,6 +172,10 @@ button {
     height: 70px;
   }
 }
+button:hover {
+  background: linear-gradient(-20deg, #a978e3, #ffa2e5);
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -440,6 +444,7 @@ footer {
 footer h4 {
   margin: 0;
   padding: 20px 0 0 40px;
+  font-style: italic;
 }
 footer ul {
   list-style: none;
